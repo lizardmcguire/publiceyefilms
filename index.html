@@ -25,7 +25,7 @@
       place-items: center;
       position: relative;
     }
-    h1 { width: min(1314px, 91.25vw); line-height: 0; }
+    h1 { width: min(1403px, 97.43vw); line-height: 0; }
     h1 img { width: 100%; height: auto; display: block; }
     footer {
       position: absolute;
@@ -37,7 +37,8 @@
       text-transform: uppercase;
     }
     @media (max-width: 767px) {
-      h1 { width: min(338px, 86.8vw); }
+      h1 { width: min(359px, 91.94vw); }
+      .desktop-only { display: none; }
     }
   </style>
 </head>
@@ -45,9 +46,9 @@
   <h1>
     <picture>
       <source media="(max-width: 767px)" srcset="/assets/logo-mobile.svg">
-      <img src="/assets/logo-desktop.svg" alt="Public Eye Films" width="1314" height="116">
+      <img src="/assets/logo-desktop.svg" alt="Public Eye Films" width="1403" height="124">
     </picture>
   </h1>
-  <footer>Public Eye Films 2026</footer>
+  <footer>Public Eye Films <span class="desktop-only">Inc. </span>2026</footer>
 </body>
 </html>
