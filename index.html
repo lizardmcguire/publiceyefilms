@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Public Eye Films</title>
+  <meta name="description" content="Public Eye Films">
+  <meta name="theme-color" content="#F9FFF6">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <style>
+    :root {
+      --eggshell: #F9FFF6;
+      --south-vancouver: #A7A7A7;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      background: var(--eggshell);
+      color: var(--south-vancouver);
+      font-family: "ES Allianz", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      position: relative;
+    }
+    h1 { width: min(1314px, 91.25vw); line-height: 0; }
+    h1 img { width: 100%; height: auto; display: block; }
+    footer {
+      position: absolute;
+      left: 0; right: 0;
+      bottom: 20px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+    @media (max-width: 767px) {
+      h1 { width: min(338px, 86.8vw); }
+    }
+  </style>
+</head>
+<body>
+  <h1>
+    <picture>
+      <source media="(max-width: 767px)" srcset="/assets/logo-mobile.svg">
+      <img src="/assets/logo-desktop.svg" alt="Public Eye Films" width="1314" height="116">
+    </picture>
+  </h1>
+  <footer>Public Eye Films 2026</footer>
+</body>
+</html>
